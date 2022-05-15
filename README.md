@@ -11,9 +11,11 @@ Click the red cross on the task will detele the task.
 3. Change the reminder<br>
 Double click the task rectangle will chagne the reminder status. The task with green block means it has already set the reminder. Otherwise, it means that the task doesn't have the reminder.
 
-## JSON server
-In this project, we mock an backend and use the JSON server to get the fake REST API. We can amke the request such as POST, PUT, GET, DELETE, and the changes will be automatically saved in db.json. It just like as you were working on a real backend.
-<br>
+## Usage
+
+### JSON server
+In this project, we mock an backend and use the JSON server to get the fake REST API. We can amke the request such as POST, PUT, GET, DELETE, and the changes will be automatically saved in db.json. It just like as you were working on a real backend.<br><br>
+
 To build for production
 
     npm run build
@@ -22,11 +24,21 @@ Install the JSON server locally
 
     npm i json-server
 <br>   
+
+
 Add `"server": "json-server --watch db.json --port 5000"` in `package.json` file `"scripts"` part
+
+
 <br>
+
+
 Run JSON server (http://localhost:5000)
     npm run server
- <br>
+    
+
+<br>
+ 
+ 
 Edit the `db.json` file
 
     {
