@@ -13,34 +13,33 @@ double click the task rectangle will chagne the reminder status. The task with g
 * In this project, we mock an backend and use the JSON server to get the fake REST API. 
 First we will install the JSON server locally use 
 
-`npm i json-server`
+    npm i json-server
 
 Create a `db.json` server file with some data
 
-`
-{
-  "tasks": [
     {
-      "id": 1,
-      "text": "Docter Appointment",
-      "day": "Feb 5th at 2:30pm",
-      "reminder": true
-    },
-    {
-      "id": 2,
-      "text": "Meeting at School",
-      "day": "Feb 6th at 1:30pm",
-      "reminder": true
-    },
-    {
-      "text": "take test",
-      "day": "Monday 1pm",
-      "reminder": true,
-      "id": 3
+      "tasks": [
+        {
+          "id": 1,
+         "text": "Docter Appointment",
+          "day": "Feb 5th at 2:30pm",
+          "reminder": true
+        },
+        {
+          "id": 2,
+         "text": "Meeting at School",
+         "day": "Feb 6th at 1:30pm",
+          "reminder": true
+         },
+       {
+          "text": "take test",
+         "day": "Monday 1pm",
+         "reminder": true,
+         "id": 3
+        }
+      ]
     }
-  ]
-}
-`
+
 
 Start JSON server
 `json-server --watch db.json`
