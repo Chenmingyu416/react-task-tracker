@@ -1,4 +1,5 @@
-This is task tracker app usring ReactJS and json server.
+# React-task-tracker
+This is task tracker app usring ReactJS and json server. We can also doing the request such as POST, PUT, GET, DELETE request, and the changes will be automatically saved in db.json. It just like as you were working on a real backend.
 
 In this app you can 
 1. Add the task
@@ -14,8 +15,13 @@ double click the task rectangle will chagne the reminder status. The task with g
 First we will install the JSON server locally use 
 
     npm i json-server
+    
+Add `"server": "json-server --watch db.json --port 5000"` in package.json file `"scripts"` part
 
-Create a `db.json` server file with some data
+run the command and it will create a `db.json` file
+    npm run server
+
+Edit the `db.json` file
 
     {
       "tasks": [
@@ -40,11 +46,11 @@ Create a `db.json` server file with some data
       ]
     }
 
+Run the command to start the react dev server
+    npm start
 
-Start JSON server
-`json-server --watch db.json`
+Type the url `http://localhost:5000/tasks` in the web brower, you will see the json file and we can make the post and delete request.
 
-We can also doing the request such as POST, PUT, GET, DELETE request, and the changes will be automatically saved in db.json. It just like as you were working on a real backend.
 
 
 # Getting Started with Create React App
