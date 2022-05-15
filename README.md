@@ -15,13 +15,15 @@ double click the task rectangle will chagne the reminder status. The task with g
 In this project, we mock an backend and use the JSON server to get the fake REST API. We can amke the request such as POST, PUT, GET, DELETE, and the changes will be automatically saved in db.json. It just like as you were working on a real backend.
 
 To build for production
+
     npm run build
-        
+ 
+ 
 Install the JSON server locally  
 
     npm i json-server
     
-Add `"server": "json-server --watch db.json --port 5000"` in package.json file `"scripts"` part
+Add `"server": "json-server --watch db.json --port 5000"` in `package.json` file `"scripts"` part
 
 Run JSON server (http://localhost:5000)
     npm run server
@@ -56,6 +58,8 @@ Run react dev server(http://localhost:3000)
     npm start
 
 Type the url `http://localhost:5000/tasks` in the web brower, you will see the json file and we can make the post and delete request.
+
+<br>
 
 *The detail can be found in https://github.com/typicode/json-server
 
