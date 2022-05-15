@@ -13,11 +13,11 @@ double click the task rectangle will chagne the reminder status. The task with g
 * In this project, we mock an backend and use the JSON server to get the fake REST API. 
 First we will install the JSON server locally use 
 
-`npm install -i json-server`
+`npm i json-server`
 
-Create a 'db.json' server file with some data
+Create a `db.json` server file with some data
 
-
+`
 {
   "tasks": [
     {
@@ -40,6 +40,12 @@ Create a 'db.json' server file with some data
     }
   ]
 }
+`
+
+Start JSON server
+`json-server --watch db.json`
+
+We can also doing the request such as POST, PUT, GET, DELETE request, and the changes will be automatically saved in db.json. It just like as you were working on a real backend.
 
 
 # Getting Started with Create React App
