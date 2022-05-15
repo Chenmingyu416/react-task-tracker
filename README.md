@@ -16,13 +16,11 @@ Double click the task rectangle will chagne the reminder status. The task with g
 ### To build for production
 
     npm run build
- <br>
+
 
 ### Run react dev server(http://localhost:3000)
 
     npm start
-
-<br>
 
 ### JSON server
 In this project, we mock an backend and use the JSON server to get the fake REST API. We can amke the request such as POST, PUT, GET, DELETE, and the changes will be automatically saved in db.json. It just like as you were working on a real backend.<br><br>
