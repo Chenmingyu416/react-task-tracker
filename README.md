@@ -13,16 +13,25 @@ Double click the task rectangle will chagne the reminder status. The task with g
 
 ## Usage
 
-### JSON server
-In this project, we mock an backend and use the JSON server to get the fake REST API. We can amke the request such as POST, PUT, GET, DELETE, and the changes will be automatically saved in db.json. It just like as you were working on a real backend.<br><br>
-
-To build for production
+### To build for production
 
     npm run build
  <br>
+
+### Run react dev server(http://localhost:3000)
+
+    npm start
+
+<br>
+
+### JSON server
+In this project, we mock an backend and use the JSON server to get the fake REST API. We can amke the request such as POST, PUT, GET, DELETE, and the changes will be automatically saved in db.json. It just like as you were working on a real backend.<br><br>
+
+
 Install the JSON server locally  
 
     npm i json-server
+
 <br>   
 
 
@@ -31,12 +40,6 @@ Add `"server": "json-server --watch db.json --port 5000"` in `package.json` file
 
 <br>
 
-
-Run JSON server (http://localhost:5000)
-    npm run server
-    
-
-<br>
  
  
 Edit the `db.json` file
@@ -64,11 +67,10 @@ Edit the `db.json` file
       ]
     }
  <br>
-Run react dev server(http://localhost:3000)
 
-    npm start
-<br>
+
 Type the url `http://localhost:5000/tasks` in the web brower, you will see the json file and we can make the post and delete request.
+
 
 <br>
 
