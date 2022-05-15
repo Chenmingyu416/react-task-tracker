@@ -1,7 +1,7 @@
 # React-task-tracker
-This is task tracker app usring ReactJS and json server. We can also doing the request such as POST, PUT, GET, DELETE request, and the changes will be automatically saved in db.json. It just like as you were working on a real backend.
+This is task tracker app using ReactJS and json server.
 
-In this app you can 
+## Basic Function
 1. Add the task
 When you click the Add button, you can add the new task and enter the information. Then you could click Save button, and the task you created will be shown belowed. Click Close button, the filling page will be closed.
 
@@ -11,14 +11,20 @@ Click the red cross on the task will detele the task.
 3. change the reminder
 double click the task rectangle will chagne the reminder status. The task with green block means it has already set the reminder. Otherwise, it means that the task doesn't have the reminder.
 
-* In this project, we mock an backend and use the JSON server to get the fake REST API. 
-First we will install the JSON server locally use 
+## JSON server
+* In this project, we mock an backend and use the JSON server to get the fake REST API. We can amke the request such as POST, PUT, GET, DELETE, and the changes will be automatically saved in db.json. It just like as you were working on a real backend.
+
+To build for production
+
+        npm run build
+        
+Install the JSON server locally  
 
     npm i json-server
     
 Add `"server": "json-server --watch db.json --port 5000"` in package.json file `"scripts"` part
 
-run the command and it will create a `db.json` file
+Run JSON server (http://localhost:5000)
     npm run server
 
 Edit the `db.json` file
@@ -46,42 +52,10 @@ Edit the `db.json` file
       ]
     }
 
-Run the command to start the react dev server
+Run react dev server(http://localhost:3000)
     npm start
 
 Type the url `http://localhost:5000/tasks` in the web brower, you will see the json file and we can make the post and delete request.
 
+The detail can be found in https://github.com/typicode/json-server
 
-
-# Getting Started with Create React App
-
-## Available Scripts
-
-In the project directory, you can run:
-
-### `npx create-react-app`
-
-Create a React App
-
-### `npm start`
-
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
-
-### `npm run build`
-
-Builds the app for production to the `build` folder.\
-
-(https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
